@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html ng-app="SudokuSolver">
 	<head>
-		<title>Sudoku Solver</title>
-        <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/>
-        <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16"/>
+		<title>Sudoku Tests</title>
+        <link rel="shortcut icon" type="image/png" href="jasmine_favicon.png">
+        <link rel="stylesheet" type="text/css" href="css/jasmine.css">
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link href="css/sudokuSolver.css" rel="stylesheet">
         
+        <script type="text/javascript" src="scripts/jasmine/lib/jasmine-3.2.1/jasmine.js"></script>
+        <script type="text/javascript" src="scripts/jasmine/lib/jasmine-3.2.1/jasmine-html.js"></script>
+        <script type="text/javascript" src="scripts/jasmine/lib/jasmine-3.2.1/boot.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-mocks.js"></script>
+		<script>
+            var testing = true;
+        </script>
 		<script src="scripts/sudokuSolver.js"></script>
+		<script src="scripts/sudokuTests.js"></script>
 	</head>
 	<body ng-controller="SudokuPuzzleController as sudoku">
 		<noscript>
